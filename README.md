@@ -40,7 +40,7 @@ Open [http://localhost:3000](http://localhost:3000).
 
 ## Streaming Data
 
-Streaming availability is powered by [JustWatch](https://www.justwatch.com/) via TMDB. It defaults to US providers (falls back to SE). The data includes:
+Streaming availability is powered by [JustWatch](https://www.justwatch.com/) via TMDB. It defaults to Swedish (SE) providers with US as fallback. The data includes:
 
 - **Stream** — included with subscription
 - **Free with Ads** — ad-supported

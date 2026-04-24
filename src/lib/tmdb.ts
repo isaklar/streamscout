@@ -83,8 +83,7 @@ export async function getWatchProviders(type: "movie" | "tv", id: number): Promi
   const data = await tmdbFetch<{ results: Record<string, WatchProviders> }>(
     `/${type}/${id}/watch/providers`
   );
-  // Default to US; caller can override via country param in the future
-  return data.results?.US || data.results?.SE || {};
+  return data.results?.SE || data.results?.US || {};
 }
 
 export async function getTrending(type: "movie" | "tv"): Promise<MediaResult[]> {
